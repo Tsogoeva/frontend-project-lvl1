@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-console.log('Welcome to the Brain Games!');
+
+import { meet } from '../src/cli.js';
+
+meet();
