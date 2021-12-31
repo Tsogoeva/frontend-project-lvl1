@@ -8,7 +8,7 @@ export default () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  for (let counter = 1; counter < roundCount; counter += 1) {
+  for (let counter = 1; counter <= roundCount; counter += 1) {
     const max = 100;
     const min = 1;
     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -17,8 +17,9 @@ export default () => {
     if (answer === checkEven(randomNumber)) {
       console.log('Correct!');
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${checkEven(randomNumber)}.`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${checkEven(randomNumber)}'.`);
       console.log(`Let's try again, ${name}`);
+      return;
     }
   }
   console.log(`Congratulations, ${name}`);
