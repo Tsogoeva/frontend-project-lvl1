@@ -6,3 +6,5 @@
 ![Workflow Lint](https://github.com/Tsogoeva/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg?branch=main)
 
 [![asciicast](https://asciinema.org/a/o4aACwgdhZDUzQQ0B4p9vl3H4.svg)](https://asciinema.org/a/o4aACwgdhZDUzQQ0B4p9vl3H4)
+
+[![asciicast](https://asciinema.org/a/UP7ABxAPbY03hu5nq2bqxIkAt.svg)](https://asciinema.org/a/UP7ABxAPbY03hu5nq2bqxIkAt)
