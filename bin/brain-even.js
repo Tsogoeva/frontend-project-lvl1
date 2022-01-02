@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import evenGame from '../src/even-game-logic.js';
+import commonLogic from '../src/index.js';
+import { rules, getQuestionAndAnswer } from '../src/games/even-game.js';
 
-evenGame();
+commonLogic(rules, getQuestionAndAnswer);
