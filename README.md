@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fb54a38434c080d91a76/maintainability)](https://codeclimate.com/github/Tsogoeva/frontend-project-lvl1/maintainability)
 
 ![Workflow Lint](https://github.com/Tsogoeva/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg?branch=main)
+
+[![asciicast](https://asciinema.org/a/o4aACwgdhZDUzQQ0B4p9vl3H4.svg)](https://asciinema.org/a/o4aACwgdhZDUzQQ0B4p9vl3H4)
