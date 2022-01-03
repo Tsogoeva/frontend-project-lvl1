@@ -13,7 +13,7 @@ const getQuestionAndAnswer = () => {
   const randomNum1 = getRandomNumber();
   const randomNum2 = getRandomNumber();
   const question = `${randomNum1} ${randomNum2}`;
-  const correctAnswer = getGcd(randomNum1, randomNum2);
+  const correctAnswer = String(getGcd(randomNum1, randomNum2));
   return [question, correctAnswer];
 };
 
