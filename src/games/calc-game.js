@@ -27,7 +27,7 @@ const getQuestionAndAnswer = () => {
   const randomNum1 = getRandomNumber();
   const randomNum2 = getRandomNumber();
   const operator = getRandomOperator();
-  const question = `Question: ${randomNum1} ${operator} ${randomNum2}`;
+  const question = `${randomNum1} ${operator} ${randomNum2}`;
   const correctAnswer = String(calculation(randomNum1, randomNum2, operator));
   return [question, correctAnswer];
 };
