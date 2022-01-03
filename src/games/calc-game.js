@@ -24,8 +24,8 @@ const calculation = (randomNum1, randomNum2, operator) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const randomNum1 = getRandomNumber();
-  const randomNum2 = getRandomNumber();
+  const randomNum1 = getRandomNumber(1, 10);
+  const randomNum2 = getRandomNumber(1, 10);
   const operator = getRandomOperator();
   const question = `${randomNum1} ${operator} ${randomNum2}`;
   const correctAnswer = String(calculation(randomNum1, randomNum2, operator));
