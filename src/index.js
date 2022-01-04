@@ -10,7 +10,7 @@ export default (rules, getQuestionAndAnswer) => {
 
   for (let counter = 1; counter <= roundCount; counter += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
-    console.log(question);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === correctAnswer) {
       console.log('Correct!');
