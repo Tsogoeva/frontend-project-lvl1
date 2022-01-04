@@ -18,7 +18,7 @@ const getProgression = () => {
 
 const getQuestionAndAnswer = () => {
   const [progression, puzzledNumber] = getProgression();
-  const question = progression.join(', ');
+  const question = progression.join(' ');
   const correctAnswer = String(puzzledNumber);
   return [question, correctAnswer];
 };
