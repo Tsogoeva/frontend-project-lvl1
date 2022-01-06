@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import commonLogic from '../src/index.js';
-import { rules, getQuestionAndAnswer } from '../src/games/progression-game.js';
+import playGame from '../src/games/progression-game.js';
 
-commonLogic(rules, getQuestionAndAnswer);
+playGame();
