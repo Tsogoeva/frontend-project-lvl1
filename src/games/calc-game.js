@@ -1,3 +1,4 @@
+import commonLogic from '../index.js';
 import getRandomNumber from '../random-number.js';
 
 const rules = 'What is the result of the expression?';
@@ -35,4 +36,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export { rules, getQuestionAndAnswer };
+export default () => commonLogic(rules, getQuestionAndAnswer);

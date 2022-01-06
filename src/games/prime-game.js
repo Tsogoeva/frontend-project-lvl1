@@ -1,3 +1,4 @@
+import commonLogic from '../index.js';
 import getRandomNumber from '../random-number.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -19,4 +20,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export { rules, getQuestionAndAnswer };
+export default () => commonLogic(rules, getQuestionAndAnswer);

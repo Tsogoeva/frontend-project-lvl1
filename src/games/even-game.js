@@ -1,3 +1,4 @@
+import commonLogic from '../index.js';
 import getRandomNumber from '../random-number.js';
 
 const checkEven = (num) => (num % 2 === 0);
@@ -12,4 +13,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export { rules, getQuestionAndAnswer };
+export default () => commonLogic(rules, getQuestionAndAnswer);
