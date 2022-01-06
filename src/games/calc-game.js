@@ -21,8 +21,11 @@ const calculation = (randomNum1, operator, randomNum2) => {
     case '-':
       result = randomNum1 - randomNum2;
       break;
-    default:
+    case '*':
       result = randomNum1 * randomNum2;
+      break;
+    default:
+      result = null;
   }
   return result;
 };
