@@ -6,19 +6,22 @@ const operators = ['+', '-', '*'];
 
 const getRandomOperator = () => {
   const minIndex = 0;
-  const maxIndex = operators.length;
-  const randomIndex = Math.floor(Math.random() * (maxIndex - minIndex)) + minIndex;
+  const maxIndex = operators.length - 1;
+  const randomIndex = getRandomNumber(minIndex, maxIndex);
   return operators[randomIndex];
 };
 
-const calculation = (randomNum1, randomNum2, operator) => {
+const calculation = (randomNum1, operator, randomNum2) => {
   let result;
-  if (operator === '+') {
-    result = randomNum1 + randomNum2;
-  } else if (operator === '-') {
-    result = randomNum1 - randomNum2;
-  } else if (operator === '*') {
-    result = randomNum1 * randomNum2;
+  switch (operator) {
+    case '+':
+      result = randomNum1 + randomNum2;
+      break;
+    case '-':
+      result = randomNum1 - randomNum2;
+      break;
+    default:
+      result = randomNum1 * randomNum2;
   }
   return result;
 };
@@ -28,7 +31,7 @@ const getQuestionAndAnswer = () => {
   const randomNum2 = getRandomNumber(1, 10);
   const operator = getRandomOperator();
   const question = `${randomNum1} ${operator} ${randomNum2}`;
-  const correctAnswer = String(calculation(randomNum1, randomNum2, operator));
+  const correctAnswer = String(calculation(randomNum1, operator, randomNum2));
   return [question, correctAnswer];
 };
 
