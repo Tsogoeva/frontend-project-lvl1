@@ -10,7 +10,7 @@ const getProgression = () => {
   for (let i = 0; i <= randomNumOfSteps; i += 1) {
     progression.push(firstRandomNum + randomProgression * i);
   }
-  const puzzledIndex = getRandomNumber(0, randomNumOfSteps - 1);
+  const puzzledIndex = getRandomNumber(0, progression.length - 1);
   const puzzledNumber = progression[puzzledIndex];
   progression[puzzledIndex] = '..';
   return [progression, puzzledNumber];
