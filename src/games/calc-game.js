@@ -13,21 +13,16 @@ const getRandomOperator = () => {
 };
 
 const calculation = (randomNum1, operator, randomNum2) => {
-  let result;
   switch (operator) {
     case '+':
-      result = randomNum1 + randomNum2;
-      break;
+      return randomNum1 + randomNum2;
     case '-':
-      result = randomNum1 - randomNum2;
-      break;
+      return randomNum1 - randomNum2;
     case '*':
-      result = randomNum1 * randomNum2;
-      break;
+      return randomNum1 * randomNum2;
     default:
-      result = null;
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
-  return result;
 };
 
 const getQuestionAndAnswer = () => {
