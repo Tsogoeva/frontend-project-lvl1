@@ -1,7 +1,7 @@
 import commonLogic from '../index.js';
 import getRandomNumber from '../random-number.js';
 
-const rules = 'What is the result of the expression?';
+const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
@@ -27,4 +27,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => commonLogic(rules, getQuestionAndAnswer);
+export default () => commonLogic(rule, getQuestionAndAnswer);

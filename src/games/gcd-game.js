@@ -1,7 +1,7 @@
 import commonLogic from '../index.js';
 import getRandomNumber from '../random-number.js';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const rule = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (randomNum1, randomNum2) => {
   if (!randomNum2) {
@@ -18,4 +18,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => commonLogic(rules, getQuestionAndAnswer);
+export default () => commonLogic(rule, getQuestionAndAnswer);
