@@ -4,8 +4,8 @@ import getRandomNumber from '../random-number.js';
 const rule = 'What number is missing in the progression?';
 
 const getProgression = (firstNum, step, length) => {
-  const progression = [];
-  for (let i = 0; i <= length; i += 1) {
+  const progression = [firstNum];
+  for (let i = 1; i <= length; i += 1) {
     progression.push(firstNum + step * i);
   }
   return progression;
